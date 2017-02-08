@@ -12,6 +12,8 @@ git add fichier.java
 
 - Avant d'effectuer une quelconque modification ou APRES un commit :
 git pull # Regardez s'il n'y a pas d'erreurs
+S'il y avait quelque chose à fusionner, il vous propose de modifier le message du commit de fusion
+Vous pouvez passer cela en tapant sur : puis q puis entrée.
 
 - S'il y a une erreur lors du git pull :
 Ouvrez les fichiers correspondants, ce qu'il y a entre HEAD et === sont vos modifications.
