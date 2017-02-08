@@ -1,0 +1,35 @@
+* AIDE MEMOIRE *
+Tout ce qui est écrit à partir # sont des commentaires
+
+- Lorsque que vous avez fini d'effectuer des modifications :
+git status # Pour vérifier quels sont les fichiers qui sont modifiés et ceux qui ne vont pas être envoyés au serveur (untracked)
+git diff # Pour voir les modifications (pour quitter, appuyez sur q)
+git commit -a -m "Votre message de commit expliquant votre travail"
+git push origin master
+
+- Lorsque vous voulez ajouter un nouveau fichier (dans untracked) :
+git add fichier.java
+
+- Avant d'effectuer une quelconque modification ou APRES un commit :
+git pull # Regardez s'il n'y a pas d'erreurs
+
+- S'il y a une erreur lors du git pull :
+Ouvrez les fichiers correspondants, ce qu'il y a entre HEAD et === sont vos modifications.
+Ce qu'il y a entre === et >>> sont les modifications sur le serveur
+Choisissez les lignes qu'il faut et supprimez les lignes HEAD, <<<, === et >>>.
+Faites de nouveau un commit :
+git commit -a -m "Fusion des modifications etc."
+
+- Si vous voulez voir l'historique des commits :
+git log # Comme pour diff, appuyez sur q pour quitter s'il le faut
+
+- Si vous voulez revenir au dernier commit (et effacer toutes vos modifications) :
+git diff # Pour voir les modifications
+git reset --hard # Pour les effacer /!\ irréversible
+
+- Pour cloner un projet :
+git clone URL_DU_PROJET
+
+- Si git n'est pas configuré
+git config --global user.name "Prénom Nom"
+git config --global user.email "Votre adresse email sur Github"
