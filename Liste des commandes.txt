@@ -4,7 +4,8 @@ Tout ce qui est écrit à partir # sont des commentaires
 - Lorsque que vous avez fini d'effectuer des modifications :
 git status # Pour vérifier quels sont les fichiers qui sont modifiés et ceux qui ne vont pas être envoyés au serveur (untracked)
 git diff # Pour voir les modifications (pour quitter, appuyez sur q)
-git commit -a -m "Votre message de commit expliquant votre travail"
+git add Fichiersàajouteraucommit # Pour valider les fichiers à modifier
+git commit -m "Votre message de commit expliquant votre travail"
 git push origin master
 
 - Lorsque vous voulez ajouter un nouveau fichier (dans untracked) :
