@@ -8,20 +8,16 @@ git add Fichiersàajouteraucommit # Pour valider les fichiers à modifier
 git commit -m "Votre message de commit expliquant votre travail"
 git push origin master
 
-- Lorsque vous voulez ajouter un nouveau fichier (dans untracked) :
-git add fichier.java
-
 - Avant d'effectuer une quelconque modification ou APRES un commit :
-git pull # Regardez s'il n'y a pas d'erreurs
-S'il y avait quelque chose à fusionner, il vous propose de modifier le message du commit de fusion
-Vous pouvez passer cela en tapant sur : puis q puis entrée.
+git pull --rebase # Regardez s'il n'y a pas d'erreurs
 
 - S'il y a une erreur lors du git pull :
 Ouvrez les fichiers correspondants, ce qu'il y a entre HEAD et === sont vos modifications.
 Ce qu'il y a entre === et >>> sont les modifications sur le serveur
 Choisissez les lignes qu'il faut et supprimez les lignes HEAD, <<<, === et >>>.
 Faites de nouveau un commit :
-git commit -a -m "Fusion des modifications etc."
+git add des_fichiers_qu'il_faut
+git commit -m "Fusion des modifications etc."
 
 - Si vous voulez voir l'historique des commits :
 git log # Comme pour diff, appuyez sur q pour quitter s'il le faut
